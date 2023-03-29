@@ -123,12 +123,20 @@ cursor: pointer;
   background-color: #3c4cad;
   color:whitesmoke;
 }
-
 .resultado2{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
+
+@media (min-width: 780px) { 
+  .resultado2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
 .tarjeta-post{
   margin-bottom: 1rem;
 padding: 1rem;
