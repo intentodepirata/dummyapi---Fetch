@@ -36,7 +36,7 @@ function init() {
         fechaHoraCorta
       )}</small></div>
               </div></a>
-              <a href="/post.html?post=${post.id}">
+              
               <div class="tarjeta-post-contenido">
                   <div class="tarjeta-post-img">
                     <img style='width: 100%; height:15rem; object-fit: cover;' src="${
@@ -66,7 +66,7 @@ function init() {
                       </div>
                   </div>
               </div>
-          </div></a>`;
+          </div>`;
 
       const divTags = document.querySelector(".tags");
 
