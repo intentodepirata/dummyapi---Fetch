@@ -96,7 +96,13 @@ img {
 }
 .user-img img {
   padding: 40px;
-  width: 200px;
+
+}
+@media (min-width: 780px) { 
+  .user-img img {
+    padding: 40px;
+    width: 200px;
+  }
 }
 .user-informacion {
   list-style-type: none;
