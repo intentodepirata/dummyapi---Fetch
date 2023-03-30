@@ -6,8 +6,6 @@ function init() {
   //obtenemos el tag para mostrar los tags relacionados y el id del usuario para poder volver atras
 
 
-  console.log(params.get("id"));
-
   const botonAtras = document.getElementById("atras");
 
   botonAtras.addEventListener("click", function () {
@@ -89,7 +87,7 @@ function init() {
     .then((data) => {
       const messages = data;
 
-      console.log(messages);
+
 
       const comentarioDiv = document.getElementById("comentarios");
       comentarioDiv.innerHTML = "";

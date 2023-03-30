@@ -1,8 +1,7 @@
 let limit = 4;
 
 const params = new URLSearchParams(window.location.search);
-console.log(params.get("tag"));
-console.log(params.get("id"));
+
 
 let url = `https://dummyapi.io/data/v1/tag/${params.get(
   "tag"
@@ -33,7 +32,7 @@ function init() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+  
         const resultado2 = document.getElementById("resultado2");
         resultado2.innerHTML = "";
   
@@ -41,7 +40,7 @@ function init() {
           //iterar dentro de un array que sta dentro del array
           const tags = post.tags;
   
-          console.log(tags);
+     
   
           resultado2.innerHTML += `
             <div class="tarjeta-post">
@@ -130,7 +129,7 @@ function init() {
 });
 }
 function vermas() {
-  console.log(limit);
+
 
   return (limit += 4);
 }

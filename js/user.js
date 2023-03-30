@@ -170,7 +170,7 @@ function formatearFecha(unafecha, opciones) {
   const fecha = new Date(unafecha);
   return fecha.toLocaleDateString("es-ES", opciones);
 }
-console.log(limit);
+
 const fechaHora = {
   year: "numeric",
   month: "long",

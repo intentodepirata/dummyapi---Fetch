@@ -12,10 +12,10 @@ function init() {
    .then(response => response.json())
    .then(data => {
     
-    console.log(data)
+
      
      const totalItem = data.total
-     // console.log(this.response)
+  
     
      const paginador = document.getElementById("paginador");
      const limitePaginador = document.getElementById("limite");
